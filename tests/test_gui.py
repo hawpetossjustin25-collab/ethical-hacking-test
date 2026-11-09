@@ -27,7 +27,7 @@ def test_full_flow(qapp, tmp_path):
     w.restart_delay_ms = 0
     w.reveal_ms = 0
     w.start_test()
-    assert w.attempt.total == 1000 and "Question 1 of 1000" in w.question_label.text()
+    assert w.attempt.total == 1200 and "Question 1 of 1200" in w.question_label.text()
     for n in range(MAX_WRONG + 1):
         q = w.attempt.question()
         w.on_answer_selected((q["correct"] + 1) % 4)

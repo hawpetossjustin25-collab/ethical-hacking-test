@@ -40,7 +40,19 @@ offline tested backups.</li>
 <li>NIST incident response: Preparation; Detection &amp; Analysis; Containment, Eradication &amp; Recovery;
 Post-Incident lessons learned. Preserve evidence and chain of custody.</li>
 <li>Responsible disclosure: report privately, give the vendor time to fix, then disclose.</li></ul>
-<h2>5. Build a safe home lab</h2>
+<h2>5. What you can do once you know more</h2>
+<ul><li><b>Bug bounties</b> (HackerOne, Bugcrowd, Intigriti): get paid for flaws you report, but only inside the
+program's scope. Duplicates usually pay nothing; read the rules first.</li>
+<li><b>CTFs</b>: legal competitions (picoCTF to start, DEF CON CTF at the top). Jeopardy = separate puzzles;
+attack-defense = attack other teams while defending your own.</li>
+<li><b>Jobs</b>: SOC analyst (usual first job), penetration tester, red team, blue team, purple team, threat hunter,
+incident responder, forensics examiner, malware analyst, AppSec engineer, cloud security engineer, GRC.</li>
+<li><b>Specialties</b>: cloud (IAM and misconfiguration), mobile apps and APIs, IoT/hardware firmware, cars (CAN
+bus), physical testing (always with a signed authorization letter), exploit development.</li>
+<li><b>Certifications path</b>: Security+ -> PenTest+ / CEH / eJPT -> OSCP; CISSP later for leadership.</li>
+<li><b>Portfolio</b>: home lab, CTF write-ups, disclosed CVEs, and open-source tools prove skill better than
+claims. Never publish client findings without written permission.</li></ul>
+<h2>6. Build a safe home lab</h2>
 <ul><li>Install VirtualBox, then a Kali Linux VM (attacker) and an intentionally vulnerable VM such as
 Metasploitable 2 or OWASP Juice Shop (target).</li>
 <li>Put both on a <b>host-only</b> network so nothing touches your home network or the internet.</li>
