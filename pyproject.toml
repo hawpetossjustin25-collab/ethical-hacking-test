@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ethical-hacking-test"
+version = "1.0.0"
+description = "Ethical hacking & cybersecurity practice test - 1000-question adaptive drill, beginner to advanced, works offline"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "hawpetossjustin25-collab"}]
+dependencies = ["PyQt6>=6.0.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "certifi"]
+
+[project.scripts]
+ethical-hacking-test = "ethical_hacking_test.app:main"
+hacking-radio = "ethical_hacking_test.radio_app:main"
+
+[tool.setuptools.packages.find]
+include = ["ethical_hacking_test*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
