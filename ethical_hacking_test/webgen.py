@@ -34,7 +34,7 @@ padding:12px;margin:10px 0;font-size:14px}.ca{color:#7fd77f}.ex{color:#aaa;font-
 </style></head><body><div class="wrap"><h1>Ethical Hacking &amp; Cybersecurity Test</h1>
 <div id="home"><div class="qbox" style="text-align:center"><p style="margin-bottom:14px;font-size:15px">
 <b>__TOTAL__ questions</b> on hacking terms, the pen-test methodology, tools, attacks, defense, and the law - beginner to advanced
-without new code liens.<br><br>Answer them all. Get <b>__LIMIT1__ wrong</b> and the test <b>restarts
+<br><br>Answer them all. Get <b>__LIMIT1__ wrong</b> and the test <b>restarts
 automatically</b>.<br><br>Questions you miss come back <b>first</b> next time.</p>
 <button class="btn" style="width:100%" onclick="startTest()">Start Test</button><br><br>
 <button class="btn" style="width:100%" onclick="showWrong()">Study My Missed Questions</button><br><br>

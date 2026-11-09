@@ -31,3 +31,14 @@ def test_web_radio_matches_station_list():
     assert [d["n"] for d in data] == [s.name for s in STATIONS]
     assert [d["u"] for d in data] == [list(s.urls) for s in STATIONS]
     assert html.index('id="radio"') < html.index("<script>")
+
+
+def test_no_leftover_tax_deed_branding():
+    import re
+    from ethical_hacking_test import app, study_guide
+    html = render_html([])
+    page = re.sub(r"const STATIONS=.*?;", "", html, flags=re.S)
+    for text in (page, app.APP_TITLE, study_guide.STUDY_GUIDE_HTML):
+        for word in ("Georgia", "tax deed", "Tax Deed", "code liens", "real estate", "attorney"):
+            assert word not in text, word
+    assert "written permission" in html
